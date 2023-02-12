@@ -9,8 +9,9 @@ export default function Navbar() {
    }
 
    return (
-      <div className='navbar--container'>
+      <header className='navbar--container'>
          <h3>Kevin Carter</h3>
+
          <nav ref={navRef}>
             <a href='/#'>Home</a>
             <a href='/#'>Skills</a>
@@ -18,13 +19,14 @@ export default function Navbar() {
             <a href='/#'>Projects</a>
             <a href='/#'>About</a>
             <a href='/#'>Contact</a>
-            <button onClick={showNavbar}>
+            <button classsName={'nav--button nav--close-button'} onClick={showNavbar}>
                <FaTimes />
             </button>
          </nav>
-         <button onClick={showNavbar}>
+         
+         <button classsName={'nav--button'} onClick={showNavbar}>
             <FaBars />
          </button>
-      </div>
+      </header>
    )
 }
