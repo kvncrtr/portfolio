@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;200;400;700&display=swap');
 
 :root {
 --primary: #264653;
@@ -69,8 +69,89 @@ nav a:hover {
    color: var(--secondary);
 }
 
+.hero--container {
+   position: relative;
+   height: 40rem;
+   width: 100%;
+   /* background-color: red;  */
+}
+
+.hero--landing {
+   position: absolute;
+   top: 50%; 
+   left: 50%; 
+   display: grid; 
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(12, 1fr);
+
+   /* h = headshot i = intro n = name sk = skill l = location sh = shape */
+   grid-template-areas: 
+         '. . . . . . . . i i i i'
+         'h h h h h h . n n n n n'
+         'h h h h h h . n n n n n'
+         'h h h h h h sk sk sk sk sk sk'
+         'h h h h h h sk sk sk sk sk sk'
+         'h h h h h h . . . . . .'
+         'h h h h h h l l l l l l'
+         'h h h h h h l l l l l l'
+         'h h h h h h . . t t t t'
+         'h h h h h h . . t t t t'
+         'sh sh sh sh sh sh sh sh sh sh sh sh'
+         'sh sh sh sh sh sh sh sh sh sh sh sh'
+         'sh sh sh sh sh sh sh sh sh sh sh sh';
+   height: 30rem;
+   width: 30rem;
+   margin: -15rem 0 0 -15rem; 
+   /* background-color: #e76f51; */
+}
+
 .hero--headshot {
+   grid-area: h;
    width: 150px;
+   margin-top: 1rem;
+}
+
+.hero--img-shape {
+   grid-area: sh;
+   height: 100%;
+   width: 30rem;
+   background-color: var(--secondary);
+}
+
+.hero--intro {
+   grid-area: i;
+   position: absolute;
+   opacity: 0.6;
+   top: 1.8rem;
+   width: 10rem;
+   font-weight: 400;
+   text-align: center;
+   /* background-color: var(--secondary); */
+}
+
+.hero--name {
+   grid-area: n;
+   height: 2.5rem;
+   width: 12.5rem;
+   margin-top: 0.6rem;
+   text-align: right;
+   font-size: 2.2rem;
+   font-weight: 400;
+}
+
+.hero--skill {
+   grid-area: sk;
+   width: 14rem;
+   margin-top: -1rem;
+   margin-left: 1rem;
+   font-size: 3rem;
+   font-weight: 100;
+}
+
+.hero--location {
+   grid-area: l;
+   width: 12rem;
+   margin-left: 1rem;
 }
 
 @media only screen and (max-width: 1024px) {
