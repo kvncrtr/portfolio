@@ -62,7 +62,7 @@ nav {
    justify-content: space-between;
    align-items: center;
    width: 200%;
-   background-color: var(--accent);
+   /* background-color: var(--accent); */
 }
 
 .navbar--container h3 {
@@ -132,7 +132,7 @@ nav a:hover {
    grid-area: h;
    width: 15rem;
    height: 20rem;
-   background-color: var(--secondary);
+   background-color: var(--accent2);
 }
 
 .hero--intro {
@@ -181,8 +181,9 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+   
    .nav--button {
-      margin-bottom: 15px;
+      margin-top: 10px;
       margin-left: 85%;
    }
 
@@ -200,7 +201,6 @@ nav a:hover {
 
    header h3 {
       width: 20rem;
-      margin-bottom: 33px;
    }
 
    header .nav--button {
@@ -235,20 +235,43 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 777px) {
-   header h3 {
-      width: 20rem;
+   .app--container {
+      position: relative;
+      z-index: 1;
    }
    
-   .nav--close-button {
-      float: right;
+   .navbar--container {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: 
+      'l l . . b b';
    }
-
+   
+   .hero--landing {
+      z-index: 1;
+   }
+   
+   header h3 {
+      grid-area: l;
+   }
+   
+   header .nav--close-button {
+      position: absolute;
+      top: 2.5rem;
+      left: 70rem;
+   }
+   
    .nav--button {
-      margin-right: -30px;
-      margin-bottom: 15px;
+      position: absolute;
+      top: 1rem;
+      left: -2.5rem;
+      grid-area: b;
    }
-
+   
    header .responsive--nav {
+      z-index: 3;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
