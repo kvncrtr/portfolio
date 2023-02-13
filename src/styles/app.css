@@ -69,6 +69,10 @@ nav a:hover {
    color: var(--secondary);
 }
 
+.hero--headshot {
+   width: 150px;
+}
+
 @media only screen and (max-width: 1024px) {
    .nav--button {
       margin-bottom: 15px;
