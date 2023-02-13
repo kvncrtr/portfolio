@@ -19,43 +19,55 @@
    font-weight: 400;
 }
 
-html {
+html, body {
+   margin: 0;
+   padding: 0;
    font-size: 10px;
 }
 
-header {
-   padding-top: 2rem;
-   padding-right: 3rem;
-   height: 7rem;
-   display: grid;
-   grid-template-columns: 1fr 4fr;
+.app--container {
+   position: absolute;
+   z-index: 1;
+   width: 100vw;
+}
+
+.navbar--container {
    align-items: center;
+   display: grid;
+   grid-template-columns: 20% 38% 40%;
+   grid-template-rows: 7rem;
+   grid-template-areas: 
+         'l s b';
+   width: 100%;
+   background-color: var(--primary);
    font-size: 1.5rem;
    color: var(--primary-light);
-   background-color: var(--primary);
 }
 
 header .nav--button {
+   grid-area: b;
+   visibility: hidden;
+   width: 1rem;
    padding: 0.5rem;
    border: none;
-   cursor: pointer;
-   outline: none;
    background: transparent;
    color: var(--light);
-   visibility: hidden;
    opacity: 0;
+   cursor: pointer;
+   outline: none;
 }
 
 nav {
-   margin: 0 auto;
-   width: 90%; 
-   position: relative;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   width: 200%;
+   background-color: var(--accent);
 }
 
 .navbar--container h3 {
+   grid-area: l;
+   min-width: 14rem;
    margin-left: 2rem; 
    font-size: 2.5rem;
 }
@@ -71,8 +83,8 @@ nav a:hover {
 
 .hero--container {
    position: relative;
-   height: 40rem;
    width: 100%;
+   height: 40rem;
    /* background-color: red;  */
 }
 
@@ -99,40 +111,45 @@ nav a:hover {
          'sh sh sh sh sh sh sh sh sh sh sh sh'
          'sh sh sh sh sh sh sh sh sh sh sh sh'
          'sh sh sh sh sh sh sh sh sh sh sh sh';
-   height: 30rem;
    width: 30rem;
+   height: 30rem;
    margin: -15rem 0 0 -15rem; 
    /* background-color: #e76f51; */
 }
 
 .hero--headshot {
+   z-index: 2;
    grid-area: h;
    width: 150px;
    margin-top: 1rem;
 }
 
 .hero--img-shape {
-   grid-area: sh;
-   height: 100%;
-   width: 30rem;
+   position: absolute;
+   z-index: 1;
+   top: -1rem;
+   left: 2rem;
+   grid-area: h;
+   width: 15rem;
+   height: 20rem;
    background-color: var(--secondary);
 }
 
 .hero--intro {
-   grid-area: i;
    position: absolute;
-   opacity: 0.6;
+   grid-area: i;
    top: 1.8rem;
+   opacity: 0.6;
    width: 10rem;
-   font-weight: 400;
    text-align: center;
+   font-weight: 400;
    /* background-color: var(--secondary); */
 }
 
 .hero--name {
    grid-area: n;
-   height: 2.5rem;
    width: 12.5rem;
+   height: 2.5rem;
    margin-top: 0.6rem;
    text-align: right;
    font-size: 2.2rem;
@@ -140,6 +157,7 @@ nav a:hover {
 }
 
 .hero--skill {
+   z-index: 1;
    grid-area: sk;
    width: 14rem;
    margin-top: -1rem;
@@ -149,9 +167,17 @@ nav a:hover {
 }
 
 .hero--location {
+   z-index: 1;
    grid-area: l;
    width: 12rem;
    margin-left: 1rem;
+}
+
+.hero--bottom-shape {
+   grid-area: sh;
+   width: 30rem;
+   height: 100%;
+   background-color: var(--secondary);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -161,13 +187,16 @@ nav a:hover {
    }
 
    .nav--close-button {
-      padding: 0;
-      margin: 0;
       position: absolute;
       top: 25px;
       right: 60px;
+      margin: 0;
+      padding: 0;
    }
-
+   
+   header {
+      z-index: 2;
+   }
 
    header h3 {
       width: 20rem;
@@ -181,26 +210,27 @@ nav a:hover {
    }
 
    header nav {
-      height: 30%;
-      width: 100%;
       position: fixed;
       top: 0;
       left: 0;
-      display: flex;
-      background-color: var(--accent3);
-      align-items: center;
-      justify-content: center;
       gap: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 30%;
+      background-color: var(--accent3);
       transition: 0.5s;
       transform: translateY(-100vh);
    }
 
    header .responsive--nav {
+      z-index: 3;
       display: flex;
       padding: 5% 0;
-      transform: none;
-      flex-direction: column;
       justify-content: space-between;
+      flex-direction: column;
+      transform: none;
    }
 }
 
@@ -219,10 +249,10 @@ nav a:hover {
    }
 
    header .responsive--nav {
-      padding: 5% 0;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      flex-direction: column;
+      padding: 5% 0;
       transform: none;
    }
 }
