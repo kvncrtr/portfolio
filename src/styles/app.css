@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;400;700&display=swap');
+
+:root {
+--primary: #264653;
+--primary-light: #E0E4E6;
+--secondary: #2a9d8f;
+--accent: #e9c46a;
+--accent2: #f4a261;
+--accent3: #e76f51;
+--light: #FEFDFB;
+--white: #ffffff;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: 0;
+   font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif;
+   font-weight: 400;
+}
+
+html {
+   font-size: 10px;
+}
+
+header {
+   padding-top: 2rem;
+   padding-right: 3rem;
+   height: 7rem;
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+   align-items: center;
+   font-size: 1.5rem;
+   color: var(--primary-light);
+   background-color: var(--primary);
+}
+
+header .nav--button {
+   padding: 0.5rem;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   background: transparent;
+   color: var(--light);
+   visibility: hidden;
+   opacity: 0;
+}
+
+nav {
+   margin: 0 auto;
+   width: 90%; 
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar--container h3 {
+   margin-left: 2rem; 
+   font-size: 2.5rem;
+}
+
+nav a {  
+   color: var(--light);
+   text-decoration: none;
+}
+
+nav a:hover {
+   color: var(--secondary);
+}
+
+@media only screen and (max-width: 1024px) {
+   .nav--button {
+      margin-bottom: 15px;
+      margin-left: 85%;
+   }
+
+   .nav--close-button {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 25px;
+      right: 60px;
+   }
+
+
+   header h3 {
+      width: 20rem;
+      margin-bottom: 33px;
+   }
+
+   header .nav--button {
+      font-size: 2.5rem;
+      visibility: visible;
+      opacity: 1;
+   }
+
+   header nav {
+      height: 30%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      background-color: var(--accent3);
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      transition: 0.5s;
+      transform: translateY(-100vh);
+   }
+
+   header .responsive--nav {
+      display: flex;
+      padding: 5% 0;
+      transform: none;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+}
+
+@media only screen and (max-width: 777px) {
+   header h3 {
+      width: 20rem;
+   }
+   
+   .nav--close-button {
+      float: right;
+   }
+
+   .nav--button {
+      margin-right: -30px;
+      margin-bottom: 15px;
+   }
+
+   header .responsive--nav {
+      padding: 5% 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: none;
+   }
+}

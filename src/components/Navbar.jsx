@@ -19,12 +19,12 @@ export default function Navbar() {
             <a href='/#'>Projects</a>
             <a href='/#'>About</a>
             <a href='/#'>Contact</a>
-            <button classsName={'nav--button nav--close-button'} onClick={showNavbar}>
+            <button className={'nav--button nav--close-button'} onClick={showNavbar}>
                <FaTimes />
             </button>
          </nav>
          
-         <button classsName={'nav--button'} onClick={showNavbar}>
+         <button className={'nav--button'} onClick={showNavbar}>
             <FaBars />
          </button>
       </header>
