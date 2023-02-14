@@ -133,6 +133,7 @@ nav a:hover {
    width: 15rem;
    height: 20rem;
    background-color: var(--accent2);
+   background-color: var(--accent2);
 }
 
 .hero--intro {
