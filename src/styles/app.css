@@ -184,12 +184,45 @@ nav a:hover {
 .skill--container {
    justify-content: center;
    padding: 0 5rem;
+   /* background-color: lavender; */
 }
 
 .skill--img {
    margin: 0 auto;
    margin-bottom: -3px;
-   width: 100%;
+   max-width: 100%;
+}
+
+.skill--text-container {
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-areas: 
+      '. a b c .';
+   grid-gap: 4rem;
+   padding-top: 15rem;
+   padding-bottom: 15rem;
+   font-size: 1.5rem;
+   /* background-color: darksalmon; */
+   overflow: hidden;
+}
+
+.skill--responsive {
+   grid-area: a;
+   max-width: 300px;
+   /* background-color: red; */
+}
+
+.skill--function {
+   grid-area: b;
+   max-width: 300px;
+   /* background-color: blue; */
+}
+
+.skill--framework {
+   grid-area: c;
+   max-width: 300px;
+   /* background-color: lawngreen; */
 }
 
 @media only screen and (max-width: 1024px) {
