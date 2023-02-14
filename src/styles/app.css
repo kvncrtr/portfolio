@@ -62,7 +62,7 @@ nav {
    justify-content: space-between;
    align-items: center;
    width: 200%;
-   background-color: var(--accent);
+   /* background-color: var(--accent); */
 }
 
 .navbar--container h3 {
@@ -132,7 +132,7 @@ nav a:hover {
    grid-area: h;
    width: 15rem;
    height: 20rem;
-   background-color: var(--secondary);
+   background-color: var(--accent2);
 }
 
 .hero--intro {
@@ -182,7 +182,6 @@ nav a:hover {
 
 @media only screen and (max-width: 1024px) {
    .nav--button {
-      margin-bottom: 15px;
       margin-left: 85%;
    }
 
@@ -200,7 +199,7 @@ nav a:hover {
 
    header h3 {
       width: 20rem;
-      margin-bottom: 33px;
+      margin-top: 0rem;
    }
 
    header .nav--button {
@@ -235,24 +234,20 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 777px) {
-   header h3 {
-      width: 20rem;
-   }
-   
-   .nav--close-button {
-      float: right;
+   .navbar--container {
+      /* color: red; */
+      padding-right: 40px;
    }
 
-   .nav--button {
-      margin-right: -30px;
-      margin-bottom: 15px;
+   header .nav--button {
+     position: absolute;
+     left: 7%;
    }
 
-   header .responsive--nav {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      padding: 5% 0;
-      transform: none;
+   header .nav--close-button {
+      position: absolute;
+      left: 91%;
+      
    }
+
 }
