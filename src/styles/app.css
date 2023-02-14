@@ -84,7 +84,6 @@ nav a:hover {
 .hero--container {
    position: relative;
    width: 100%;
-   height: 40rem;
    /* background-color: red;  */
 }
 
@@ -181,7 +180,6 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-   
    .nav--button {
       margin-top: 10px;
       margin-left: 85%;
@@ -277,5 +275,38 @@ nav a:hover {
       flex-direction: column;
       padding: 5% 0;
       transform: none;
+   }
+}
+
+@media screen and (max-width: 354.9px) {
+   .hero--container {
+      height: 40rem;
+   }
+} 
+
+@media screen and (max-width: 800px) {
+   body {
+      width: 100vw;
+   }
+
+   .hero--container {
+      height: 40rem;
+   }
+
+   .hero--landing {
+      /* background-color: #e9c46a; */
+   }
+}
+
+@media screen and (min-width: 800px) {
+   
+
+   .hero--container {
+      background-color: violet;
+      height: 40rem;
+   }
+
+   .hero--landing {
+   
    }
 }
