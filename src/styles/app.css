@@ -211,7 +211,7 @@ nav a:hover {
    max-width: 200rem;
    margin-right: 13rem;
    font-size: 1.5rem;
-   background-color: darksalmon;
+   /* background-color: darksalmon; */
    overflow: hidden;
 }
 
@@ -245,6 +245,24 @@ nav a:hover {
    line-height: 1.5;
    color: var(--primary-light);
 }
+
+.lang--container {
+   padding: 0 5rem;
+}
+
+.lang--logo-case {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.lang--logo {
+   font-size: 12px;
+   height: auto;
+   width: 10%;
+   /* background-color: greenyellow; */
+}
+
 
 @media only screen and (max-width: 1024px) {
    .nav--button {
