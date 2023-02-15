@@ -8,6 +8,7 @@
 --accent2: #f4a261;
 --accent3: #e76f51;
 --light: #FEFDFB;
+--dark: #081013;
 --white: #ffffff;
 }
 
@@ -182,8 +183,11 @@ nav a:hover {
 }
 
 .skill--container {
+   position: relative;
+   z-index: 1;
    justify-content: center;
    padding: 0 5rem;
+   overflow-wrap: auto;
    /* background-color: lavender; */
 }
 
@@ -191,21 +195,26 @@ nav a:hover {
    margin: 0 auto;
    margin-bottom: -3px;
    max-width: 100%;
+   filter: brightness(50%);
 }
 
 .skill--text-container {
-   position: relative;
+   position: absolute;
+   z-index: 2;
+   top: 30%;
+   left: 12rem;
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    grid-template-areas: 
       '. a b c .';
    grid-gap: 4rem;
-   padding-top: 15rem;
-   padding-bottom: 15rem;
+   max-width: 200rem;
+   margin-right: 13rem;
    font-size: 1.5rem;
-   /* background-color: darksalmon; */
+   background-color: darksalmon;
    overflow: hidden;
 }
+
 
 .skill--responsive {
    grid-area: a;
@@ -223,6 +232,18 @@ nav a:hover {
    grid-area: c;
    max-width: 300px;
    /* background-color: lawngreen; */
+}
+
+.skill--card-title {
+   margin-bottom: 2rem;
+   color: var(--accent3);
+   font-size: 4rem;
+   font-weight: 700;
+}
+
+.skill--description {
+   line-height: 1.5;
+   color: var(--primary-light);
 }
 
 @media only screen and (max-width: 1024px) {
