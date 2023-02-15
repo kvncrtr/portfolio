@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skill from './components/Skill'
-import Languages from './components/Languages'
 import './styles/app.css'
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
       <Navbar />
       <Hero />
       <Skill />
-      <Languages />
     </div>
   )
 }

@@ -246,23 +246,6 @@ nav a:hover {
    color: var(--primary-light);
 }
 
-.lang--container {
-   padding: 0 5rem;
-}
-
-.lang--logo-case {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-
-.lang--logo {
-   font-size: 12px;
-   height: auto;
-   width: 10%;
-   /* background-color: greenyellow; */
-}
-
 
 @media only screen and (max-width: 1024px) {
    .nav--button {
