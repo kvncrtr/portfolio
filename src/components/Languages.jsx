@@ -13,6 +13,8 @@ export default function Languages() {
    return (
       <div className={'lang--container'}>
 
+         {/* <h1 className={'lang--header'}>Tech I've Used</h1> */}
+
          <div className={'lang--logo-case'}>
             <img className={'lang--logo'} src={html} alt="html logo" />
             <img className={'lang--logo'} src={css} alt="css logo" />

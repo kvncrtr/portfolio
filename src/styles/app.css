@@ -247,22 +247,64 @@ nav a:hover {
 }
 
 .lang--container {
+   margin-top: 10rem;
    padding: 0 5rem;
 }
 
 .lang--logo-case {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto;
+   grid-template-areas: 
+      'a b c d'
+      'e f g h';
+   grid-gap: 3rem;
+   background-color: ;
+   justify-content: center;
 }
 
 .lang--logo {
    font-size: 12px;
    height: auto;
-   width: 10%;
-   /* background-color: greenyellow; */
+   width: 60%;
 }
 
+.lang--logo {
+   margin-left: 9rem;
+}
+
+.lang--logo-case :nth-child(1) {
+   grid-area: a;
+
+}
+
+.lang--logo-case :nth-child(2) {
+   grid-area: b;  
+}
+
+.lang--logo-case :nth-child(3) {
+   grid-area: c;   
+}
+
+.lang--logo-case :nth-child(4) {
+   grid-area: d;   
+}
+
+.lang--logo-case :nth-child(5) {
+   grid-area: e;   
+}
+
+.lang--logo-case :nth-child(6) {
+   grid-area: f;   
+}
+
+.lang--logo-case :nth-child(7) {
+   grid-area: g;  
+}
+
+.lang--logo-case :nth-child(8) {
+   grid-area: h;   
+}
 
 @media only screen and (max-width: 1024px) {
    .nav--button {
@@ -330,8 +372,6 @@ nav a:hover {
 
    header .nav--close-button {
       position: absolute;
-      left: 91%;
-      
+      left: 91%;      
    }
-
 }
