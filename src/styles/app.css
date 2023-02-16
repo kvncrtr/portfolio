@@ -246,6 +246,97 @@ nav a:hover {
    color: var(--primary-light);
 }
 
+.lang--container {
+   position: relative;
+   z-index: 1;
+   margin-top: 10rem;
+   padding: 0 5rem;
+   /* background-color: gray; */
+}
+
+.lang--header {
+   max-width: 50rem;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 6rem;
+   font-weight: 700;
+   color: var(--secondary);
+}
+
+.lang--bkrnd {
+   z-index: 1;
+   max-height: 850px;
+   max-width: 100%;
+   opacity: 0.15;
+}
+
+.lang--logo-case {
+   position: absolute;
+   z-index: 2;
+   top: 15rem;
+   left: 0;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto;
+   grid-template-areas: 
+   'a b c d'
+   'e f g h';
+   grid-gap: 3rem;
+   justify-content: center;
+}
+
+.lang--logo-box h3 {
+   margin: 0 auto;
+   text-align: center;
+   font-size: 3rem;
+   color: var(--accent3);
+   font-weight: 100;
+   /* background-color: gray; */
+}
+
+.lang--logo {
+   margin-top: 2rem;
+   font-size: 12px;
+   height: auto;
+   width: 60%;
+}
+
+.lang--logo {
+   margin-left: 9rem;
+}
+
+.lang--logo-case :nth-child(1) {
+   grid-area: a;
+
+}
+
+.lang--logo-case :nth-child(2) {
+   grid-area: b;  
+}
+
+.lang--logo-case :nth-child(3) {
+   grid-area: c;   
+}
+
+.lang--logo-case :nth-child(4) {
+   grid-area: d;   
+}
+
+.lang--logo-case :nth-child(5) {
+   grid-area: e;   
+}
+
+.lang--logo-case :nth-child(6) {
+   grid-area: f;   
+}
+
+.lang--logo-case :nth-child(7) {
+   grid-area: g;  
+}
+
+.lang--logo-case :nth-child(8) {
+   grid-area: h;   
+}
 
 @media only screen and (max-width: 1024px) {
    .nav--button {
@@ -313,8 +404,6 @@ nav a:hover {
 
    header .nav--close-button {
       position: absolute;
-      left: 91%;
-      
+      left: 91%;      
    }
-
 }
