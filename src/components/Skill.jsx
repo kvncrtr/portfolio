@@ -7,7 +7,9 @@ export default function Skill() {
       <div className={'skill--container'}>
 
          <img className={'skill--img'} src={skillPicture} alt={'picture of vs code'} />
-         <div className={'skill--text-container'}>
+
+        <div className={'skill--text-container'}>
+            <h1 className={'skill--header'}>What I do...</h1>
 
             <div className={'skill--responsive'}>
                <h3 className={'skill--card-title'}>RESPONSIVE</h3>

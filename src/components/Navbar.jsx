@@ -15,9 +15,8 @@ export default function Navbar() {
          <nav ref={navRef}>
             <a href='/#'>Home</a>
             <a href='/#'>Skills</a>
-            <a href='/#'>Languages</a>
-            <a href='/#'>Projects</a>
             <a href='/#'>About</a>
+            <a href='/#'>Projects</a>
             <a href='/#'>Contact</a>
             <button className={'nav--button nav--close-button'} onClick={showNavbar}>
                <FaTimes />
