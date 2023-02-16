@@ -247,23 +247,55 @@ nav a:hover {
 }
 
 .lang--container {
+   position: relative;
+   z-index: 1;
    margin-top: 10rem;
    padding: 0 5rem;
+   /* background-color: gray; */
+}
+
+.lang--header {
+   max-width: 50rem;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 6rem;
+   font-weight: 700;
+   color: var(--secondary);
+}
+
+.lang--bkrnd {
+   z-index: 1;
+   max-height: 850px;
+   width: 100%;
+   opacity: 0.2;
 }
 
 .lang--logo-case {
+   position: absolute;
+   z-index: 2;
+   top: 15rem;
+   left: 0;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: auto;
    grid-template-areas: 
-      'a b c d'
-      'e f g h';
+   'a b c d'
+   'e f g h';
    grid-gap: 3rem;
-   background-color: ;
    justify-content: center;
 }
 
+.lang--logo-box h3 {
+   margin: 0 auto;
+   text-align: center;
+   font-size: 3rem;
+   color: var(--accent3);
+   font-weight: 100;
+   /* background-color: gray; */
+}
+
 .lang--logo {
+   margin-top: 2rem;
    font-size: 12px;
    height: auto;
    width: 60%;
