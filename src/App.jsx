@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skill from './components/Skill'
-//import Languages from './components/Languages'
+import Languages from './components/Languages'
+import About from './components/About'
 
 import './styles/app.css'
 
@@ -12,7 +13,9 @@ function App() {
     <div className={'app--container'}>
       <Navbar />
       <Hero />
-      <Skill />
+      {/*<Skill />*/}
+      {/*<Languages />*/}
+      <About />
     </div>
   )
 }

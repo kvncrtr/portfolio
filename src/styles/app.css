@@ -9,6 +9,7 @@
 --accent3: #e76f51;
 --light: #FEFDFB;
 --dark: #081013;
+--gray: #5e6568;
 --white: #ffffff;
 }
 
@@ -18,18 +19,61 @@
    box-sizing: 0;
    font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif;
    font-weight: 400;
+   box-sizing: border-box;
 }
 
-html, body {
+html, 
+body {
    margin: 0;
    padding: 0;
    font-size: 10px;
+}
+
+img {
+   display: block;
 }
 
 .app--container {
    position: absolute;
    z-index: 1;
    width: 100%;
+}
+
+/* Scaleables */
+
+.section {
+   padding: 0 5rem;
+}
+
+.section--title {
+   align-self: center;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   font-size: 8rem;
+   font-weight: 900;
+   color: var(--dark);
+   /* background-color: red; */
+}
+
+.section--subtitle {
+   margin: 0;
+   padding: 1rem;
+   width: 100%;
+   height: ;
+   letter-spacing: -2px;
+   font-size: 3rem;
+   font-weight: 300;
+   font-family: 'Cutive Mono';
+   color: var(--dark);
+   background-color: var(--secondary);
+}
+
+.section--description {
+   margin-top: 2rem;
+   font-size: 1.6rem;
+   color: var(--gray); 
+   line-height: 2;
 }
 
 .navbar--container {
@@ -43,6 +87,7 @@ html, body {
    background-color: var(--primary);
    font-size: 1.5rem;
    color: var(--primary-light);
+   overflow: hidden;
 }
 
 header .nav--button {
@@ -337,6 +382,67 @@ nav a:hover {
 
 .lang--logo-case :nth-child(8) {
    grid-area: h;   
+}
+
+/* About */
+
+.about--me {
+   margin: 0 auto;
+   max-width: 1124px;
+}
+
+.about--img1,
+.about--img2 {
+   width: 100%;
+}
+
+@media (min-width: 714px) {
+   .about--me {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      grid-template-areas: 
+         'title img'
+         'subtitle img'
+         'story img';
+      grid-column-gap: 2rem;
+   }
+   
+   .about--title {
+      grid-area: title;
+   }
+
+   .about--subtitle {
+      position: relative;
+      z-index: 1;
+      left: -1em;
+      grid-column: 1 / -1;
+      grid-row: 2;
+      margin-bottom: 1em;
+      width: calc(100% + 2em);
+      padding-left: 1em;
+      padding-right: calc(300px + 2em);
+   }
+
+   .about--story-case {
+      /* background-color: darkmagenta;  */
+      grid-area: story;
+   }
+
+   .about--img1 {
+      position: relative;
+      top: 20px;
+   }
+   
+   .about--img2 {
+      position: absolute;
+      top: 15em;      
+   }
+
+   .about--img-case {
+      position: relative;
+      z-index: 2;
+      grid-area: img;
+   }
 }
 
 @media only screen and (max-width: 1024px) {
