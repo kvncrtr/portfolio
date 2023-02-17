@@ -131,6 +131,7 @@ nav a:hover {
    position: relative;
    width: 100%;
    height: 40rem;
+   padding: 30em 0px;
    /* background-color: red;  */
 }
 
@@ -225,6 +226,10 @@ nav a:hover {
    width: 30rem;
    height: 100%;
    background-color: var(--secondary);
+}
+
+@media (min-width: 818px) {
+
 }
 
 .skill--container {
@@ -387,7 +392,7 @@ nav a:hover {
 /* About */
 
 .about--me {
-   margin: 0 auto;
+   margin: 5em auto 0 auto;
    max-width: 1124px;
 }
 
