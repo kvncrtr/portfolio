@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <Skill />
       {/*<Languages />*/}
-      {/*<About />*/}
+      <About />
     </div>
   )
 }
