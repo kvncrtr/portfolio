@@ -8,10 +8,19 @@ export default function Hero() {
             <img className={'hero--headshot'} src={headshot} alt="headshot" />
             <div className={'hero--img-shape'}></div>
 
-            <p className={'section--title hero--intro'}>Hello, I am</p>
-            <h1 className={'section--title hero--name'}>Kevin Carter</h1>
-            <h1 className={'hero--skill'}>Front-End Developer</h1>
-            <h1 className={'hero--location'}>Atlanta, Ga</h1>
+            <p className={'section--title hero--intro'}>
+               Hello, I am
+            </p>
+            <h1 className={'section--title hero--name'}>
+               Kevin Carter
+            </h1>
+            <h1 className={'hero--skill'}>
+               Front-End Developer
+            </h1>
+            <h1 className={'hero--location'}>
+               Atlanta, Ga
+            </h1>
+
             <div className={'hero--bottom-shape'}></div>
 
       </div>
