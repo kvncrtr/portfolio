@@ -9,15 +9,15 @@ export default function Navbar() {
    }
 
    return (
-      <header className='navbar--container'>
+      <header id={'nav'} className={'navbar--container'}>
          <h3>Kevin Carter</h3>
 
          <nav ref={navRef}>
-            <a href='/#'>Home</a>
-            <a href='/#'>Services</a>
-            <a href='/#'>About</a>
-            <a href='/#'>Projects</a>
-            <a href='/#'>Contact</a>
+            <a href='/#nav' onClick={showNavbar}>Home</a>
+            <a href='/#skill' onClick={showNavbar}>Services</a>
+            <a href='/#about' onClick={showNavbar}>About</a>
+            <a href='/#projects' onClick={showNavbar}>Projects</a>
+            <a href='/#contact' onClick={showNavbar}>Contact</a>
             <button className={'nav--button nav--close-button'} onClick={showNavbar}>
                <FaTimes />
             </button>

@@ -3,7 +3,7 @@ import headshot from '../assets/headshot.jpg'
 
 export default function Hero() {
    return (
-      <div className={'hero--container'}>
+      <div id={'hero'} className={'hero--container'}>
 
             <img className={'hero--headshot'} src={headshot} alt="headshot" />
             <div className={'hero--img-shape'}></div>
