@@ -5,7 +5,7 @@ import saint2 from '../assets/saint-cookin-3.jpg'
 
 export default function About() {
    return (
-      <div className={'section about--me'}>
+      <div id={'about'} className={'section about--me'}>
 
             <h2 className={'section--title about--title'}>Who I am</h2>
             <p className={'section--subtitle about--subtitle'}>Developer based out of ATL</p>

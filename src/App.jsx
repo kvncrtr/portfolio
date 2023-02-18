@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, forwardRef } from 'react'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -9,8 +9,9 @@ import About from './components/About'
 import './styles/app.css'
 
 function App() {
+
   return (
-    <div className={'app--container'}>
+    <div id={'home'} className={'app--container'}>
       <Navbar />
       <Hero />
       <Skill />

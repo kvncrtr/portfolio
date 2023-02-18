@@ -29,6 +29,7 @@ body {
    margin: 0;
    padding: 0;
    font-size: 10px;
+   scroll-behavior: smooth;
 }
 
 img {
@@ -102,6 +103,11 @@ img {
    overflow: hidden;
 }
 
+header {
+   position: fixed;
+   z-index: 10;
+}
+
 header .nav--button {
    grid-area: b;
    visibility: hidden;
@@ -142,9 +148,9 @@ nav a:hover {
 /* Hero Section */
 
 @media (max-width: 818px) {
-
    .hero--container {
-      position: relative;
+      position: relative; 
+      z-index: 1;
       display: grid;
       grid-template-columns: 175px min-content;
       grid-template-areas: 
@@ -230,6 +236,8 @@ nav a:hover {
 
 @media (min-width: 818px) {
    .hero--container {
+      position: relative;
+      z-index: 1;
       display: grid;
       width: min-content;
       margin: 10rem auto;
@@ -541,7 +549,7 @@ nav a:hover {
 
    .about--img-case {
       position: relative;
-      z-index: 2;
+      z-index: 1;
       grid-area: img;
    }
 }
@@ -590,9 +598,11 @@ nav a:hover {
    }
 
    header .responsive--nav {
-      z-index: 3;
+      z-index: 4;
       display: flex;
+      height: 100vh;
       padding: 5% 0;
+      padding-bottom: 50%;
       justify-content: space-between;
       flex-direction: column;
       transform: none;

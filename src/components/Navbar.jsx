@@ -9,11 +9,11 @@ export default function Navbar() {
    }
 
    return (
-      <header id={'nav'} className={'navbar--container'}>
+      <header className={'navbar--container'}>
          <h3>Kevin Carter</h3>
 
          <nav ref={navRef}>
-            <a href='/#nav' onClick={showNavbar}>Home</a>
+            <a href='/#home' onClick={showNavbar}>Home</a>
             <a href='/#skill' onClick={showNavbar}>Services</a>
             <a href='/#about' onClick={showNavbar}>About</a>
             <a href='/#projects' onClick={showNavbar}>Projects</a>
