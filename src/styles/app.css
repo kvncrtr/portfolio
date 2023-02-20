@@ -671,5 +671,15 @@ nav a:hover {
 }
 
 .project--stack li {
-   font-family: ;
+   display: inline-block; 
+   justify-content: space-between;
+   padding: 1rem;
+   margin-left: 1rem;
+   box-shadow: 0px 0px 10px 1px var(--gray);
+   width: min-content;
+   background-color: var(--dark);
+   font-weight: 600;
+   font-family: 'Cutive Mono', Arial, Helvetica, sans-serif;
+   color: var(--primary-light);
 }
+
