@@ -14,67 +14,10 @@ export default function Projects() {
                <img src={quote} alt='' />
 
                <div className={'project--specs'}>              
-                  <p>Front-End Developer</p>
                   <h3>Random Quote Machine</h3>
-                  <ul>
-                     <li>HTML</li>
-                     <li>CSS</li>
-                     <li>JavaScript</li>
-                     <li>React</li>
-                     <li>SCSS</li>
-                  </ul>
-                  <button className={'project--view'}>View Project</button>
-               </div>
-               <div className={'project--description'}>
-                  <p>Description</p>
-                  <p>And I will bring the third part 
-                  through the fire, and will refine 
-                  them as silver is refined, and 
-                  will try them as gold is tried: 
-                  they shall call on my name, and I 
-                  will hear them: I will say, It is 
-                  my people: and they shall say, The 
-                  LORD is my God.</p>
-               </div>
-            </div>
-
-            <div className={'project--card'}>
-
-               <img src={drum} alt='' />
-
-               <div className={'project--specs'}>              
-                  <p>Front-End Developer</p>
-                  <h3>Random Quote Machine</h3>
-                  <ul>
-                     <li>HTML</li>
-                     <li>CSS</li>
-                     <li>JavaScript</li>
-                     <li>React</li>
-                     <li>SCSS</li>
-                  </ul>
-                  <button className={'project--view'}>View Project</button>
-               </div>
-               <div className={'project--description'}>
-                  <p>Description</p>
-                  <p>And I will bring the third part 
-                  through the fire, and will refine 
-                  them as silver is refined, and 
-                  will try them as gold is tried: 
-                  they shall call on my name, and I 
-                  will hear them: I will say, It is 
-                  my people: and they shall say, The 
-                  LORD is my God.</p>
-               </div>
-            </div>
-
-            <div className={'project--card'}>
-
-               <img src={markdown} alt='' />
-
-               <div className={'project--specs'}>              
-                  <p>Front-End Developer</p>
-                  <h3>Random Quote Machine</h3>
-                  <ul>
+                  <p className={'project--role'}><span className={'bold'}>Role:</span> Front-End Developer</p>
+                  <span className={'bold'}>Stack:</span>
+                  <ul className={'project--stack'}>
                      <li>HTML</li>
                      <li>CSS</li>
                      <li>JavaScript</li>
