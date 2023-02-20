@@ -1,5 +1,9 @@
 import React from 'react'
 
+import quote from '../assets/thumbnails/quote-thumb.jpg'
+import drum from '../assets/thumbnails/drum-thumb.jpg'
+import markdown from '../assets/thumbnails/markdown-thumb.jpg'
+
 export default function Projects() {
    return (
       <section className={'section'}>
@@ -7,18 +11,19 @@ export default function Projects() {
 
             <div className={'project--card'}>
 
-               <img src='' alt='' />
+               <img src={quote} alt='' />
 
                <div className={'project--specs'}>              
                   <p>Front-End Developer</p>
                   <h3>Random Quote Machine</h3>
                   <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>SCSS</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>JavaScript</li>
+                     <li>React</li>
+                     <li>SCSS</li>
                   </ul>
+                  <button className={'project--view'}>View Project</button>
                </div>
                <div className={'project--description'}>
                   <p>Description</p>
@@ -35,18 +40,19 @@ export default function Projects() {
 
             <div className={'project--card'}>
 
-               <img src='' alt='' />
+               <img src={drum} alt='' />
 
                <div className={'project--specs'}>              
                   <p>Front-End Developer</p>
                   <h3>Random Quote Machine</h3>
                   <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>SCSS</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>JavaScript</li>
+                     <li>React</li>
+                     <li>SCSS</li>
                   </ul>
+                  <button className={'project--view'}>View Project</button>
                </div>
                <div className={'project--description'}>
                   <p>Description</p>
@@ -63,18 +69,19 @@ export default function Projects() {
 
             <div className={'project--card'}>
 
-               <img src='' alt='' />
+               <img src={markdown} alt='' />
 
                <div className={'project--specs'}>              
                   <p>Front-End Developer</p>
                   <h3>Random Quote Machine</h3>
                   <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>SCSS</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>JavaScript</li>
+                     <li>React</li>
+                     <li>SCSS</li>
                   </ul>
+                  <button className={'project--view'}>View Project</button>
                </div>
                <div className={'project--description'}>
                   <p>Description</p>
