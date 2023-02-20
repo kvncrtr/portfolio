@@ -12,6 +12,7 @@
 --darklight2: #3d3d3d;
 --gray: #5e6568;
 --light-shadow: #B4B5B5;
+--lighter-shadow: #D4D4D4;
 --light: #FEFDFB;
 --white: #ffffff;
 }
@@ -35,6 +36,14 @@ body {
 
 img {
    display: block;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+   color: var(--light); 
+   text-decoration: none;
 }
 
 .button {
@@ -625,13 +634,17 @@ nav a:hover {
 
 /* Projects Section */
 
+.project--title {
+   max-width: min-content;
+   margin: 10rem auto 3rem;
+   font-size: clamp(1rem, 17vw, 9rem);
+}
+
 .project--container {
    display: flex;
    flex-direction: column;
-   gap: 3rem;
-   margin-top: 12rem;
-   border: 5px solid var(--primary-light);
-   border-radius: 5px;
+   gap: 8rem;
+   /* margin-top: ; */
    font-size: 1.6rem;
 }
 
@@ -639,14 +652,24 @@ nav a:hover {
    display: flex;
    flex-direction: column;
    gap: 2rem;
+   border: 5px solid var(--primary-light);
+   border-radius: 5px;
    /* background-color: fuchsia; */
 }
 
 .project--card img {
-   overflow: center;
    width: 100%;
    height: clamp(100px, 300px, 100%);
    border-radius: 5px 5px 0px 0px;
+   background-position: center;
+   background-size: cover;
+}
+
+.project--image-case:hover .project--image,
+.project--image-case:focus .project--image {
+   cursor: pointer;
+   transform: scale(1.02);
+   transition: all 0.5s;
 }
 
 .project--specs {
@@ -675,7 +698,7 @@ nav a:hover {
    margin: 0 1rem 1rem;
    box-shadow: 0px 0px 10px 1px var(--light-shadow);
    width: min-content;
-   background-color: var(--dark);
+   background-color: var(--accent3);
    font-weight: 600;
    font-family: 'Cutive Mono', Arial, Helvetica, sans-serif;
    color: var(--primary-light);
@@ -689,10 +712,27 @@ nav a:hover {
    margin-top: 2rem;
 }
 
-.project--view {
-   position: relative;
-   top: -1vh;
-   width: 14rem;
-   margin:  1rem auto;
-   padding: 1rem 3rem; 
+.project--button-case {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20rem;
+   height: 5rem;
+   margin: 1rem auto 2rem;
+   border: 0.3rem solid var(--accent3);
+}
+
+.project--button {
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+   padding: 1rem;
+   text-align: center;
+   background-color: var(--accent2);
+}
+
+.project--button:hover {
+   box-shadow: -3rem 3rem 2rem var(--gray);
+   transform: translate3d(2rem, -2rem, 0.5rem) ;
+   transition: 0.5s;
 }
