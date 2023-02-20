@@ -7,11 +7,16 @@ import markdown from '../assets/thumbnails/markdown-thumb.jpg'
 export default function Projects() {
    return (
       <section className={'section'}>
+         <h1 className={'section--title'}>Projects</h1>
+
          <div className={'project--container'}>
 
             <div className={'project--card'}>
-
-               <img src={quote} alt='' />
+               
+               <div>
+                  <img src={quote} alt={`a image of a project that i've built called random quote machine`} />
+               </div>
+                  
 
                <div className={'project--specs'}>              
                   <h3>Random Quote Machine</h3>
@@ -24,10 +29,9 @@ export default function Projects() {
                      <li>React</li>
                      <li>SCSS</li>
                   </ul>
-                  <button className={'project--view'}>View Project</button>
                </div>
                <div className={'project--description'}>
-                  <p>Description</p>
+                  <p className={'bold'}>Description:</p>
                   <p>And I will bring the third part 
                   through the fire, and will refine 
                   them as silver is refined, and 
@@ -37,6 +41,8 @@ export default function Projects() {
                   my people: and they shall say, The 
                   LORD is my God.</p>
                </div>
+
+               <button className={'project--view'}>View Project</button>
             </div>
          </div>
       </section>

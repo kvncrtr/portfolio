@@ -1,8 +1,5 @@
 import React from 'react'
 
-import skillPicture from '../assets/skillset-bkgrnd.jpg' 
-import skillPicture2 from '../assets/mobile-image-pexels-pew-nguyen-15372903.jpg' 
-
 export default function Skill() {
    return (
       <div id={'skill'} className={'skill--container'}>
@@ -24,9 +21,6 @@ export default function Skill() {
                   </p>
                </div>
             </div>
-
-         <img className={'skill--img img'} src={skillPicture} alt={'picture of vs code'} />
-         <img className={'skill--img2 img'} src={skillPicture2} alt={'picture of vs code'} />
 
          <a href={'/#projects'} className={'button'}>My Work</a>
         
