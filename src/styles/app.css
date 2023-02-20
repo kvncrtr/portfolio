@@ -736,3 +736,55 @@ nav a:hover {
    transform: translate3d(2rem, -2rem, 0.5rem) ;
    transition: 0.5s;
 }
+
+@media (min-width: 1024px) {
+   .project--card {
+      display: grid;
+      grid-template-columns: 500px 1fr 1fr;
+      grid-template-areas: 
+      'img specs text'
+      'img specs button';
+      gap: 0;
+   }
+
+   .project--card img {
+      grid-area: img;
+      width: 100%;
+      height: auto;
+      border-radius: 0px;
+   }
+
+   .project--specs {
+      grid-area: specs; 
+   }
+
+   .project--stack li {
+      display: inline-block;
+   }
+   
+   .project--description {
+      height: min-content;
+      grid-area: text; 
+   }
+   
+   .project--description p:last-child {
+      height: min-content;
+      margin-bottom: 0;
+      padding-bottom: 0;
+   }
+   
+   .project--button-case {
+      position: relative;
+      left: -3rem;
+      align-self: start;
+      grid-area:  button;
+      margin: 0 auto;
+   }
+}
+
+@media (min-width: 1200px) {
+   .project--button-case {
+      position: relative;
+      top: -60%;
+   }
+}
