@@ -15,8 +15,8 @@ let email = 'mailto:console.logkevin@gmail.com'
                <div className={'contact--square'}></div>
                <div className={'contact--cylinder'}>
                   <div className={'rectangle'}>
-                     <div className={'oval top-oval'}></div>
-                     <div className={'oval bottom-oval'}></div>
+                     <div className={'oval top--oval'}></div>
+                     <div className={'oval bottom--oval'}></div>
                   </div>
                </div>
                <div className={'contact--rectangle'}></div>

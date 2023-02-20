@@ -844,7 +844,26 @@ nav a:hover {
 
 .rectangle {
    position: relative;
-   width: 9rem;
-   height: 12rem;
+   width: 12rem;
+   height: 11rem;
    background-color: var(--accent2);
+}
+
+.oval {
+   position: absolute;
+   width: 100%;
+   height: 30%;
+   border-radius: 100%;
+}
+
+.top--oval {
+   top: -15%; 
+   border-radius: 50%;
+   background-color: var(--accent);
+}
+
+.bottom--oval {
+   bottom: -15%; 
+   border-radius: 50%;
+   background-color: inherit;
 }
