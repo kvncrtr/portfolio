@@ -821,15 +821,16 @@ nav a:hover {
 .contact--shape-case {
    position: relative;
    z-index: 1;
-   height: 200px;
+   height: 150px;
    width: auto;
-   margin: 3rem auto 0;
+   margin: -1rem auto 0;
 }
 
 .contact--square {
    position: absolute;
-   z-index: 9;
-   top: 9rem;
+   z-index: 2;
+   top: 6rem;
+   left: -13em;
    width: 12rem;
    height: 12rem;
    background-color: var(--primary);
@@ -838,8 +839,8 @@ nav a:hover {
 .contact--cylinder {
    position: inherit;
    top: 5rem;
-   left: 6rem;
-   z-index: 10;
+   left: -6rem;
+   z-index: 6;
 }
 
 .rectangle {
@@ -866,4 +867,41 @@ nav a:hover {
    bottom: -15%; 
    border-radius: 50%;
    background-color: inherit;
+}
+
+.contact--rectangle {
+   position: absolute;
+   top: 7rem;
+   left: -1rem;
+   z-index: 5;
+   width: 20rem;
+   height: 6rem;
+   background-color: var(--secondary);
+}
+
+.contact--triangle {
+   position: absolute;
+   top: 0rem;
+   left: 10rem;
+   z-index: 4;
+   width: 0;
+   height: 0;
+   border: 7.5rem solid transparent;
+   border-top: 0;
+   border-bottom: 15rem solid var(--accent);
+}
+
+.contact--circle {
+   position: absolute;
+   z-index: 3;
+   top: 2rem;
+   left: 7rem;
+   width: 15rem;
+   height: 15rem;
+   border-radius: 50%;
+   background-color: var(--primary);
+}
+
+@media (min-width: 1024px) {
+   
 }
