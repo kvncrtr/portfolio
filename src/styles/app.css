@@ -823,7 +823,7 @@ nav a:hover {
    z-index: 1;
    height: 150px;
    width: auto;
-   margin: -1rem auto 0;
+   margin:  0 auto;
 }
 
 .contact--square {
@@ -903,5 +903,54 @@ nav a:hover {
 }
 
 @media (min-width: 1024px) {
-   
+   .contact--container {
+      position: relative;
+      height: 40rem;
+   }
+
+   .contact--title {
+      position: absolute;
+      top: 0rem;
+   }
+
+   .contact--shape-case {
+      position: absolute;
+      top: 23rem;
+      left: 45%;
+      margin: 0 auto; 
+      width: 150px;
+      /* background-color: #E0E4E6; */
+   }
+
+   .contact--square {
+      z-index: 6;
+      top: 4rem;
+      left: 40vw;
+      transition: all 5s ease-in;
+   }
+
+   .contact--cylinder {
+      top: -25rem;
+      left: -40vw;
+      transition: all 5s ease-in;
+   }
+
+   .contact--rectangle {
+      left: -15rem;
+      width: 400px;
+      transform: scaleX(2.3);
+      transition: all 10s ease-in;
+   }
+
+   .contact--circle {
+      top: 1rem;
+      left: -40vw;
+      transition: all 5s ease-in;
+   }
+
+   .contact--triangle {
+      top: -25rem;
+      left: 37vw;
+      transition: all 5s ease-in;
+   }
 }
