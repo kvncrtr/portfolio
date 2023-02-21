@@ -19,7 +19,6 @@ function App() {
       <Skill />
       <About />
       <Projects />
-      {/* Conflict */}
       <Contact />
       <Footer />
 
