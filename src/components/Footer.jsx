@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Footer() {
-let email = 'console.logkevin@gmail.com'
+let email = 'mailto:console.logkevin@gmail.com'
 
 let github = 'https://github.com/kvncrtr'
 let linkedin = 'https://www.linkedin.com/in/kevin-carter-4a4886105/'
@@ -13,7 +13,7 @@ let pinterest = 'https://www.pinterest.com/repaygod/'
 
    return (
    <footer className={'section footer--section'}>
-      <a href={email}>console.logkevin@gmail.com</a>
+      <a href={email} alt='email'>console.logkevin@gmail.com</a>
 
       <div className={'footer--icon-container'}>
 
