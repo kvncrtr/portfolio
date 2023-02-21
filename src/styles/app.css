@@ -973,3 +973,17 @@ nav a:hover {
    text-align: center;
 }
 
+.footer--icon-case {
+   width: min-content;
+   margin: 0 auto;
+   background-color: red;
+}
+
+.footer--icon {
+   font-size: 2rem;
+}
+
+.footer--icon +  .footer--icon {
+   margin-left: 1rem;
+}
+
