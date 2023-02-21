@@ -818,6 +818,12 @@ nav a:hover {
    background-color: var(--secondary);
 }
 
+.contact--email:hover {
+   transform: scale(1.1);
+   transition: 0.1s;
+   box-shadow: 0 0 10rem 0.1rem var(--accent2);
+}
+
 .contact--shape-case {
    position: relative;
    z-index: 1;
@@ -913,6 +919,10 @@ nav a:hover {
       top: 0rem;
    }
 
+   .contact--email {
+      margin-top: 5.8rem;
+   }
+
    .contact--shape-case {
       position: absolute;
       top: 23rem;
@@ -954,3 +964,12 @@ nav a:hover {
       transition: all 5s ease-in;
    }
 }
+
+/* Footer Section */
+
+.footer--section {
+   background-color: var(--primary);
+   color: var(--primary-light);
+   text-align: center;
+}
+
