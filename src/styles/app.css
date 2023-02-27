@@ -987,10 +987,10 @@ nav a:hover {
 }
 
 .footer--icon-container {
-   display: inline-block;
+   display: flex;
    flex-wrap: wrap;
-   width: 100%;
-   margin: 1rem auto 10rem;
+   gap: 0.5rem;
+   margin: 1rem auto 10rem; 
 }
 
 .footer--icon {
