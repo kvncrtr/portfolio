@@ -1,23 +1,26 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 import quote from '../assets/thumbnails/quote-thumb.jpg'
 import drum from '../assets/thumbnails/drum-thumb.jpg'
 import markdown from '../assets/thumbnails/markdown-thumb.jpg'
 
-export default function Projects() {
-   let quoteLink = 'https://kvncrtr.github.io/random-quote-machine/'
+function Projects(props, ref) {
+   let quoteLink = {
+      project:'https://kvncrtr.github.io/random-quote-machine/',
+      repo: 'https://github.com/kvncrtr/random-quote-machine'
+   }
    let markdownLink = 'https://facebook.com'
    let drumLink = 'https://linkedin.com'
 
    return (
-      <section id={'projects'} className={'section'}>
+      <section ref={ref} id={'projects'} className={'section'}>
          <h1 className={'section--title project--title'}>Projects</h1>
 
          <div className={'project--container'}>
             
             <div className={'project--card'}>
                
-               <a className={'project--image-case'} href={quoteLink} target={'_blank'}>
+               <a className={'project--image-case'} href={quoteLink.project} target={'_blank'}>
                   <img className={'project--image'} src={quote} alt={`a 
                   image of a project that i've built called random 
                   quote machine`} 
@@ -55,10 +58,10 @@ export default function Projects() {
                
                <div className={'project--button-container'}>
                   <div className={'project--button-case'}>
-                     <a className={'project--button'} href={quoteLink} target={'_blank'}>View Project</a>
+                     <a className={'project--button'} href={quoteLink.project} target={'_blank'}>View Project</a>
                   </div>
                   <div className={'project--button-case'}>
-                     <a className={'project--repo-button'} href={quoteLink} target={'_blank'}>View Repository</a>
+                     <a className={'project--repo-button'} href={quoteLink.repo} target={'_blank'}>View Repository</a>
                   </div>
                </div>
                   
@@ -140,3 +143,5 @@ export default function Projects() {
       </section>
    )
 }
+
+export default forwardRef(Projects)

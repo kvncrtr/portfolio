@@ -732,7 +732,15 @@ nav {
    width: 20rem;
    height: 5rem;
    margin: 1rem auto 2rem;
-   border: 0.3rem solid var(--accent3);
+   border: 0.3rem solid var(--light-shadow);
+}
+
+.project--repo-button {
+   background-color: var(--secondary);
+}
+
+.project--button {
+   background-color: var(--accent2);
 }
 
 .project--button,
@@ -742,7 +750,6 @@ nav {
    margin: 0 auto;
    padding: 1rem;
    text-align: center;
-   background-color: var(--accent2);
 }
 
 .project--button:hover,
