@@ -135,22 +135,21 @@ function Projects(props, ref) {
 
             <div className={'project--card'}>
                
-               <a className={'project--image-case'} href={quoteLink.project} target={'_blank'}>
-                  <img className={'project--image'} src={quote} alt={`a 
-                  image of a project that i've built called random 
-                  quote machine`} 
+               <a className={'project--image-case'} href={drumLink.project} target={'_blank'}>
+                  <img className={'project--image'} src={drum} alt={`a 
+                  image of a project that i've built called drum machine`} 
                   />
                </a>
 
                <div className={'project--specs'}>              
-                  <h3>Random Quote Machine</h3>
+                  <h3>Drum Machine</h3>
                   <p className={'project--role'}>
                      <span className={'bold'}>Role:</span> Front-End Developer
                   </p>
                   <span className={'bold'}>Stack:</span>
                   <ul className={'project--stack'}>
-                     <li>React</li>
-                     <li>SCSS</li>
+                     <li>Bootstrap</li>
+                     <li>jQuery</li>
                      <li>JavaScript</li>
                      <li>HTML</li>
                      <li>CSS</li>
@@ -160,23 +159,25 @@ function Projects(props, ref) {
                <div className={'project--description'}>
                   <p className={'bold'}>Description:</p>
                   <p className={'project--summary'}>
-                     This motivational quote generator delivers inspiring 
-                     quotes from influential individuals, with the ability to 
-                     cycle through and share on Twitter. The sleek interface 
-                     displays both the quote and author, and changes to a 
-                     random color for each new quote. Designed to inspire and 
-                     motivate, the application offers an enjoyable and visually 
-                     appealing experience for anyone looking to improve their 
-                     daily routine.
+                     Drum machines are essential for creating music as 
+                     they provide a rhythmic backbone that simplifies the 
+                     creative process and enhances flexibility. This app 
+                     enables users to play a variety of drum sounds using 
+                     either the provided buttons or keyboard keys. The 
+                     app also features sliders that allow users to adjust 
+                     the volume of the sounds played. Moreover, the app 
+                     displays the name of the sound currently playing in 
+                     a text box. The interface of this app is modeled 
+                     after the Akai MPC 3000.
                   </p>
                </div>
                
                <div className={'project--button-container'}>
                   <div className={'project--button-case'}>
-                     <a className={'project--button'} href={quoteLink.project} target={'_blank'}>View Project</a>
+                     <a className={'project--button'} href={drumLink.project} target={'_blank'}>View Project</a>
                   </div>
                   <div className={'project--button-case'}>
-                     <a className={'project--repo-button'} href={quoteLink.repo} target={'_blank'}>View Repository</a>
+                     <a className={'project--repo-button'} href={drumLink.repo} target={'_blank'}>View Repository</a>
                   </div>
                </div>
                   
