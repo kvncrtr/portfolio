@@ -10,14 +10,35 @@ function Skill({showProjects}, ref) {
                <div className={'skill--responsive skill'}>
                   <h3 className={'section--subtitle skill--card-title'}>RESPONSIVE</h3>
                   <p className={'skill--description'}>
-                     There is therefore now no condemnation for those who are in Christ Jesus.[a] 2 For the law of the Spirit of life has set you[b] free in Christ Jesus from the law of sin and death. 3 For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin,[c] he condemned sin in the flesh, 4 in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit.
+                     I expound on a responsive website design that is 
+                     optimized for all devices and screen sizes. This 
+                     will include designing and developing webpages that 
+                     are optimized for all devices, including mobile, 
+                     tablet, and desktop. I utilize the latest HTML5, 
+                     CSS3, and JavaScript techniques to ensure a smooth 
+                     and consistent experience across all devices. All 
+                     designs and development processes also includes 
+                     optimizing content for maximum readability and 
+                     usability on all devices
                   </p>
                </div>
 
                <div className={'skill--function skill'}>
                   <h3 className={'section--subtitle skill--card-title'}>FUNCTIONALITY</h3>
                   <p className={'skill--description'}>
-                     There is therefore now no condemnation for those who are in Christ Jesus.[a] 2 For the law of the Spirit of life has set you[b] free in Christ Jesus from the law of sin and death. 3 For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin,[c] he condemned sin in the flesh, 4 in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit.
+                     As a React developer, I have a skill for creating 
+                     front-end web applications in React. I utilize the 
+                     latest technology and design principles to create a 
+                     modern and feature-rich experience. I have the 
+                     capability to develop websites that are optimized 
+                     for speed and performance, as well as for scalability 
+                     and security that align with industry best practices. 
+                     My applications are advanced solutions for creating 
+                     sophisticated codebases that can handle large volumes 
+                     of traffic and data. With my expertise in React, I 
+                     can help create a visually appealing and responsive 
+                     web user interface to deliver a tailored solution 
+                     that aligns with your business goals and objectives.
                   </p>
                </div>
             </div>
