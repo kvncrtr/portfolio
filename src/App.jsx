@@ -11,10 +11,12 @@ import Footer from './components/Footer'
 import './styles/app.css'
 
 function App() {
-  const navRef = useRef(null)
   const appRef = useRef(null)
+  const navRef = useRef(null)
   const skillRef = useRef(null)
+  const aboutRef = useRef(null)
   const projectRef = useRef(null)
+  const contactRef = useRef(null)
 
   const handleClick = () => {    
     navRef.current.classList.toggle('responsive--nav')
@@ -39,6 +41,16 @@ function App() {
     navRef.current.classList.toggle('responsive--nav')
   }
 
+  const aboutScroll = () => { 
+    navRef.current.classList.toggle('responsive--nav')
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+  
+  const contactScroll = () => {  
+    navRef.current.classList.toggle('responsive--nav')
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div ref={appRef} id={'home'} className={'app--container'}>
       <Navbar 
@@ -46,12 +58,14 @@ function App() {
         showNavbar={showNavbar} 
         skillScroll={skillScroll}
         projectScroll={projectScroll}
+        aboutScroll={aboutScroll}
+        contactScroll={contactScroll}
         ref={navRef} />
       <Hero />
       <Skill ref={skillRef} showProjects={showProjects} />
-      <About />
+      <About ref={aboutRef} />
       <Projects ref={projectRef} />
-      <Contact />
+      <Contact ref={contactRef} />
       <Footer />
 
     </div>

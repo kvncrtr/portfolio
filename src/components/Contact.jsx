@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-export default function Contact() {
+function Contact(props, ref) {
 let email = 'mailto:console.logkevin@gmail.com'
 
    return (
-      <section id={'contact'} className={'section contact--section'}>
+      <section ref={ref} id={'contact'} className={'section contact--section'}>
 
          <div className={'contact--container'}>
 
@@ -28,3 +28,5 @@ let email = 'mailto:console.logkevin@gmail.com'
       </section>
    )
 }
+
+export default forwardRef(Contact)

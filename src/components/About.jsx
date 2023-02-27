@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 import saint1 from '../assets/saint-cookin-1.jpg'
 import saint2 from '../assets/saint-cookin-3.jpg'
 
-export default function About() {
+function About(props, ref) {
    return (
-      <div id={'about'} className={'section about--me'}>
+      <div ref={ref} id={'about'} className={'section about--me'}>
 
             <h2 className={'section--title about--title'}>Who I am</h2>
             <p className={'section--subtitle about--subtitle'}>Developer based out of ATL</p>
@@ -37,3 +37,5 @@ export default function About() {
          </div>
    )
 }
+
+export default forwardRef(About)
