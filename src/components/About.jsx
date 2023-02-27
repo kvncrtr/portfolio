@@ -12,20 +12,10 @@ function About(props, ref) {
             
             <div className={'about--story-case'}>
                <p className={'section--description about--story'}>
-                  Be ye therefore followers of God, as dear children;
-                  2and walk in love, as Christ also hath loved us, and 
-                  hath given himself for us an offering and a 
-                  sacrifice to God for a sweetsmelling savour. But 
-                  fornication, and all uncleanness, or covetousness, 
-                  let it not be once named among you, as becometh 
-                  saints;
+                 
                </p>
                <p className={'section--description about--story'}>
-                  neither filthiness, nor foolish talking, nor jesting, 
-                  which are not convenient: but rather giving of thanks. 
-                  For this ye know, that no whoremonger, nor unclean 
-                  person, nor covetous man, who is an idolater, hath any
-                  inheritance in the kingdom of Christ and of God.
+                  
                </p>
             </div>
             
