@@ -989,7 +989,7 @@ nav a:hover {
 .footer--icon-container {
    display: flex;
    flex-wrap: wrap;
-   gap: 0.5rem;
+   gap: 1rem;
    margin: 1rem auto 10rem; 
 }
 
