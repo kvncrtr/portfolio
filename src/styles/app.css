@@ -208,8 +208,8 @@ nav {
       z-index: 4;
       display: flex;
       height: 100vh;
-      padding: 5% 0;
-      padding-bottom: 50%;
+      padding: 15% 0;
+      padding-bottom: clamp(10rem, 18rem, 20rem);
       justify-content: space-between;
       flex-direction: column;
       transform: none;
@@ -229,7 +229,7 @@ nav {
 
    header .nav--close-button {
       position: absolute;
-      left: 91%;      
+      left: 85%;      
    }
 }
 
@@ -715,8 +715,14 @@ nav {
    padding: 0rem 4rem 0px;
 }
 
-.project--description p:last-child {
+.project--summary {
    margin-top: 2rem;
+   line-height: 2em;
+}
+
+.project--button-container {
+   display: flex;
+   flex-direction: column;
 }
 
 .project--button-case {
@@ -729,7 +735,8 @@ nav {
    border: 0.3rem solid var(--accent3);
 }
 
-.project--button {
+.project--button,
+.project--repo-button {
    width: 100%;
    height: 100%;
    margin: 0 auto;
@@ -738,7 +745,8 @@ nav {
    background-color: var(--accent2);
 }
 
-.project--button:hover {
+.project--button:hover,
+.project--repo-button:hover {
    box-shadow: -3rem 3rem 2rem var(--gray);
    transform: translate3d(2rem, -2rem, 0.5rem) ;
    transition: 0.5s;
