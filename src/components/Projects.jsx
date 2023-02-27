@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 import quote from '../assets/thumbnails/quote-thumb.jpg'
 import drum from '../assets/thumbnails/drum-thumb.jpg'
 import markdown from '../assets/thumbnails/markdown-thumb.jpg'
 
-export default function Projects() {
+function Projects(props, ref) {
    let quoteLink = 'https://youtube.com'
    let markdownLink = 'https://facebook.com'
    let drumLink = 'https://linkedin.com'
 
    return (
-      <section id={'projects'} className={'section'}>
+      <section ref={ref} id={'projects'} className={'section'}>
          <h1 className={'section--title project--title'}>Projects</h1>
 
          <div className={'project--container'}>
@@ -127,3 +127,5 @@ export default function Projects() {
       </section>
    )
 }
+
+export default forwardRef(Projects)

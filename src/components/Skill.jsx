@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-export default function Skill() {
+function Skill({showProjects}, ref) {
    return (
-      <div id={'skill'} className={'skill--container'}>
+      <div ref={ref} id={'skill'} className={'skill--container'}>
 
             <h1 className={'section--title skill--header'}>What I do</h1>
             
@@ -22,8 +22,10 @@ export default function Skill() {
                </div>
             </div>
 
-         <a href={'/#projects'} className={'button'}>My Work</a>
+         <button className={'skill--button button'} onClick={showProjects} >My Work</button>
         
       </div>
    )
 }
+
+export default forwardRef(Skill)

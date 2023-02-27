@@ -452,6 +452,10 @@ nav {
    text-align: center;
 }
 
+.skill--button {
+   cursor: pointer;
+}
+
 @media (min-width: 900px) {
    .skill--case {
       display: flex;

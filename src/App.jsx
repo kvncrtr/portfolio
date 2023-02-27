@@ -14,6 +14,7 @@ function App() {
   const navRef = useRef(null)
   const appRef = useRef(null)
   const skillRef = useRef(null)
+  const projectRef = useRef(null)
 
   const handleClick = () => {    
     navRef.current.classList.toggle('responsive--nav')
@@ -23,18 +24,33 @@ function App() {
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive--nav')
   }
-
-  const scrollSkill = () => {
+  
+  const skillScroll = () => {
+    navRef.current.classList.toggle('responsive--nav')
     skillRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+  
+  const projectScroll = () => {
+    navRef.current.classList.toggle('responsive--nav')
+    projectRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+  
+  const showProjects = () => {
+    navRef.current.classList.toggle('responsive--nav')
   }
 
   return (
     <div ref={appRef} id={'home'} className={'app--container'}>
-      <Navbar handleClick={handleClick} showNavbar={showNavbar} ref={navRef} />
+      <Navbar 
+        handleClick={handleClick} 
+        showNavbar={showNavbar} 
+        skillScroll={skillScroll}
+        projectScroll={projectScroll}
+        ref={navRef} />
       <Hero />
-      <Skill ref={skillRef} scrollSkill={scrollSkill} />
+      <Skill ref={skillRef} showProjects={showProjects} />
       <About />
-      <Projects />
+      <Projects ref={projectRef} />
       <Contact />
       <Footer />
 

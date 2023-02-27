@@ -1,7 +1,7 @@
 import { forwardRef } from "react"
 import { FaBars, FaTimes } from 'react-icons/fa'
 
-function Navbar({handleClick, showNavbar}, navRef) {
+function Navbar({handleClick, showNavbar, skillScroll, projectScroll}, navRef) {
    
    return (
       <header className={'navbar--container'}>
@@ -9,9 +9,9 @@ function Navbar({handleClick, showNavbar}, navRef) {
 
          <nav ref={navRef}>
             <span className={'nav--links'} onClick={handleClick}>Home</span>
-            <span className={'nav--links'} onClick={handleClick}>Services</span>
+            <span className={'nav--links'} onClick={skillScroll}>Services</span>
             <span className={'nav--links'} onClick={handleClick}>About</span>
-            <span className={'nav--links'} onClick={handleClick}>Projects</span>
+            <span className={'nav--links'} onClick={projectScroll}>Projects</span>
             <span className={'nav--links'} onClick={handleClick}>Contact</span>
             <button className={'nav--button nav--close-button'} onClick={showNavbar}>
                <FaTimes />
