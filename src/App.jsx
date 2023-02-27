@@ -38,7 +38,7 @@ function App() {
   }
   
   const showProjects = () => {
-    navRef.current.classList.toggle('responsive--nav')
+    projectRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
   const aboutScroll = () => { 
