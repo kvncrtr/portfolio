@@ -453,6 +453,7 @@ nav {
 }
 
 .skill--button {
+   border: none;
    cursor: pointer;
 }
 
@@ -581,6 +582,7 @@ nav {
 
 .about--me {
    margin: 5em auto 0 auto;
+   padding-top: 7rem;
    max-width: 1124px;
 }
 
@@ -640,6 +642,10 @@ nav {
 
 /* Projects Section */
 
+#projects {
+   padding-top: 1rem;
+}
+
 .project--title {
    max-width: min-content;
    margin: 10rem auto 3rem;
@@ -650,7 +656,6 @@ nav {
    display: flex;
    flex-direction: column;
    gap: 8rem;
-   /* margin-top: ; */
    font-size: 1.6rem;
 }
 
