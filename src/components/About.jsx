@@ -1,7 +1,8 @@
 import React, { forwardRef } from 'react'
 
 import saint1 from '../assets/saint-cookin-1.jpg'
-import saint2 from '../assets/saint-cookin-3.jpg'
+import saint2 from '../assets/saint-cookin-2.jpg'
+import saint3 from '../assets/saint-cookin-3.jpg'
 
 function About(props, ref) {
    return (
@@ -66,8 +67,9 @@ function About(props, ref) {
             </div>
             
             <div className={'about--img-case'}>
-               <img className={'about--img1'} src={saint2} alt='saint and I cooking in the studio' />
-               <img className={'about--img2'} src={saint1} alt='saint and I cooking in the studio' />
+               <img className={'about--img1'} src={saint1} alt='saint and I cooking in the studio' />
+               <img className={'about--img2'} src={saint2} alt='saint and I cooking in the studio' />
+               <img className={'about--img3'} src={saint3} alt='saint and I cooking in the studio' />
             </div>
          
          </div>

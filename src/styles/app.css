@@ -587,7 +587,8 @@ nav {
 }
 
 .about--img1,
-.about--img2 {
+.about--img2,
+.about--img3 {
    width: 100%;
 }
 
@@ -622,21 +623,16 @@ nav {
       /* background-color: darkmagenta;  */
       grid-area: story;
    }
-   
-   .about--img1 {
-      position: relative;
-      top: 20px;
-   }
-   
-   .about--img2 {
-      position: absolute;
-      top: 15em;      
-   }
-   
+
    .about--img-case {
       position: relative;
       z-index: 1;
       grid-area: img;
+   }
+
+   .about--img2,
+   .about--img3 {
+      margin-top: 2rem;
    }
 }
 
