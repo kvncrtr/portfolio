@@ -764,8 +764,8 @@ nav {
       display: grid;
       grid-template-columns: 500px 1fr 1fr;
       grid-template-areas: 
-      'img specs text'
-      'img specs button';
+      'img specs button'
+      'text specs button';
       gap: 0;
    }
 
@@ -785,6 +785,8 @@ nav {
    }
    
    .project--description {
+      margin-top: 3rem;
+      width: 100%;
       height: min-content;
       grid-area: text; 
    }
@@ -795,19 +797,17 @@ nav {
       padding-bottom: 0;
    }
    
-   .project--button-case {
+   .project--button-container {
       position: relative;
-      left: -3rem;
-      align-self: start;
-      grid-area:  button;
-      margin: 0 auto;
+      left: -3rem; 
+      align-self: center;
+      height: min-content;
    }
 }
 
-@media (min-width: 1200px) {
-   .project--button-case {
-      position: relative;
-      top: -60%;
+@media (min-width: 1163px) {
+   .project--description {
+      width: 80vw;
    }
 }
 
