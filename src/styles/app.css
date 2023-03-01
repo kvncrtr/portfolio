@@ -1009,7 +1009,7 @@ nav {
 }
 
 .footer--icon-container {
-   display: flex;
+   display: inline-block;
    flex-wrap: wrap;
    gap: 1rem;
    margin: 1rem auto 10rem; 
@@ -1027,6 +1027,18 @@ nav {
    opacity: 0.7;
 }
 
+@media (max-width: 437px) {
+   .footer--icon-container {
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 3rem;
+   }
+
+   .footer--icon +  .footer--icon {
+      margin-left: 0rem;
+   }
+}
+
 @media (min-width: 838px) {
    .footer--section {
       display: grid;
@@ -1037,7 +1049,7 @@ nav {
 
    .footer--section > a {
       padding-top: 0.4rem;
-      padding-left: 40%;
+      padding-left: 30%;
    }
 
    .footer--icon-container,
@@ -1046,7 +1058,8 @@ nav {
    }
 
    .footer--icon-container {
-      padding-right: 35%;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
    }
 
    .footer--section p {
