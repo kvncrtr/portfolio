@@ -7,7 +7,7 @@ This portfolio highlights the projects and programming languages used in product
 🎨 Portfolio is live 
 [Checkout the site here.](https://kvncrtr.github.io/portfolio/)
 
-<img alt="Code Size" style="height: 20.8px" src="https://img.shields.io/github/languages/code-size/kvncrtr/portfolio?style=for-the-badge">
+<!-- <img alt="Code Size" style="height: 20.8px" src="https://img.shields.io/github/languages/code-size/kvncrtr/portfolio?style=for-the-badge">
 <img alt="Repository File Count" style="height: 20.8px" src="https://img.shields.io/github/directory-file-count/kvncrtr/portfolio?style=for-the-badge">
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/kvncrtr/portfolio"> 
 <img alt="React Logo" style="height: 20px" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
@@ -18,7 +18,7 @@ This portfolio highlights the projects and programming languages used in product
 <img alt="Notion Logo" style="height: 20px" src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white">
 <img alt="GitHub Repo Stars" style="" src="https://img.shields.io/github/stars/kvncrtr/portfolio?style=social">
 <img alt="My IG Profile" style="height: 20px; cursor:pointer;" src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" href="https://www.instagram.com/kvncrtr/">
-<img alt="My LinkedIn Profile" style="height: 20px; cursor:pointer;" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" href="https://www.linkedin.com/in/kevin-carter-4a4886105/">
+<img alt="My LinkedIn Profile" style="height: 20px; cursor:pointer;" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" href="https://www.linkedin.com/in/kevin-carter-4a4886105/"> -->
 
 ## 💬 Contact
 If you have an offer, opportunity, or introduction that might make my life more interesting. Email me at console.logkevin@gmail.com.
