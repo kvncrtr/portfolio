@@ -4,7 +4,8 @@ A portfolio is an extraordinary medium for demonstrating to business owners, hir
 
 This portfolio highlights the projects and programming languages used in production. It’s often difficult to express what you can offer to someone without having an exact representation of what you can provide as value. With a portfolio we can do exactly that, with direct links to the application and remote repository. Each project has been dominantly constructed with front-end libraries and programming languages. The projects that’re provided can also showcase real-life examples of how I work and the approach I take to solve legitimate systemic business inefficiencies.
 
-**Live Link**: https://kvncrtr.github.io/portfolio/
+🎨 Portfolio is live 
+[Checkout the site here.](https://kvncrtr.github.io/portfolio/)
 
 <img alt="Code Size" style="height: 20.8px" src="https://img.shields.io/github/languages/code-size/kvncrtr/portfolio?style=for-the-badge">
 <img alt="Repository File Count" style="height: 20.8px" src="https://img.shields.io/github/directory-file-count/kvncrtr/portfolio?style=for-the-badge">
@@ -19,7 +20,22 @@ This portfolio highlights the projects and programming languages used in product
 <img alt="My IG Profile" style="height: 20px; cursor:pointer;" src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" href="https://www.instagram.com/kvncrtr/">
 <img alt="My LinkedIn Profile" style="height: 20px; cursor:pointer;" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" href="https://www.linkedin.com/in/kevin-carter-4a4886105/">
 
-## Contact
+## 💬 Contact
 If you have an offer, opportunity, or introduction that might make my life more interesting. Email me at console.logkevin@gmail.com.
 
 For the reasons stated above I'll only respond to proposals that're a good match for my schedule and interest. 
+
+## 📖 Documentation
+**General Idea:** Build an web app that displays projects I’ve built
+
+**Audience:** Hiring Manager, Business Owners, and Tech Recruiters 
+
+**Goal of Project:** Getting a job from a company, small business, or a contract from a tech recruiter. 
+
+**Future Updates**
++ Minor project database JS file
++ Interactive video
++ Blog post
+
+📃 For more documentation 
+[Click here to visit the full Notion document!](https://www.notion.so/Portfolio-7980257d9fad448eb71d6a90f72bad64?pvs=4)
