@@ -37,4 +37,4 @@ For the reasons stated above, I'll only respond to proposals that are matched fo
 + Blog post
 
 📃 For more documentation,
-[click here to visit the full Notion document!](<https://www.notion.so/Portfolio-7980257d9fad448eb71d6a90f72bad64?pvs=4>)
+[click here to visit the full Notion document!](<[https://www.notion.so/Portfolio-7980257d9fad448eb71d6a90f72bad64?pvs=4](https://supreme-lens-b4e.notion.site/Portfolio-7980257d9fad448eb71d6a90f72bad64)>)
