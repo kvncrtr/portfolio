@@ -1,24 +1,24 @@
 import React, { forwardRef } from 'react'
 
-import quote from '../assets/thumbnails/quote-thumb.jpg'
+import vendex from '../assets/thumbnails/vendex-thumb.jpg'
 import drum from '../assets/thumbnails/drum-thumb.jpg'
 import markdown from '../assets/thumbnails/markdown-thumb.jpg'
 
 function Projects(props, ref) {
-   let quoteLink = {
-      project:'https://kvncrtr.github.io/random-quote-machine/',
-      repo: 'https://github.com/kvncrtr/random-quote-machine'
-   }
+   // let quoteLink = {
+   //    project:'https://kvncrtr.github.io/random-quote-machine/',
+   //    repo: 'https://github.com/kvncrtr/random-quote-machine'
+   // }
 
-   let markdownLink = {
-      project:'https://kvncrtr.github.io/markdown-previewer/',
-      repo: 'https://github.com/kvncrtr/markdown-previewer'
-   }
+   // let markdownLink = {
+   //    project:'https://kvncrtr.github.io/markdown-previewer/',
+   //    repo: 'https://github.com/kvncrtr/markdown-previewer'
+   // }
 
-   let drumLink = {
-      project:'https://kvncrtr.github.io/drum-machine/',
-      repo: 'https://github.com/kvncrtr/drum-machine'
-   }
+   // let drumLink = {
+   //    project:'https://kvncrtr.github.io/drum-machine/',
+   //    repo: 'https://github.com/kvncrtr/drum-machine'
+   // }
 
    return (
       <section ref={ref} id={'projects'} className={'section'}>
@@ -30,54 +30,47 @@ function Projects(props, ref) {
 
             <div className={'project--card'}>
                
-               <a className={'project--image-case'} href={quoteLink.project} target={'_blank'}>
-                  <img className={'project--image'} src={quote} alt={`a 
-                  image of a project that i've built called random 
-                  quote machine`} 
+               <a className={'project--image-case'} href={""} target={'_blank'}>
+                  <img className={'project--image'} src={vendex} alt={`An 
+                     image of a inventory manager called vendex`} 
                   />
                </a>
 
                <div className={'project--specs'}>              
-                  <h3>Random Quote Machine</h3>
+                  <h3>Vendex</h3>
                   <p className={'project--role'}>
-                     <span className={'bold'}>Role:</span> Front-End Developer
+                     <span className={'bold'}>Role:</span> Full-Stack Engineer
                   </p>
                   <span className={'bold'}>Stack:</span>
                   <ul className={'project--stack'}>
                      <li>React</li>
                      <li>SCSS</li>
+                     <li>Golang</li>
+                     <li>PostgreSQL</li>
                      <li>JavaScript</li>
                      <li>HTML</li>
                      <li>CSS</li>
-
                   </ul>
                </div>
                <div className={'project--description'}>
                   <p className={'bold'}>Description:</p>
                   <p className={'project--summary'}>
-                     This motivational quote generator delivers inspiring 
-                     quotes from influential individuals, with the ability to 
-                     cycle through and share on Twitter. The sleek interface 
-                     displays both the quote and author, and changes to a 
-                     random color for each new quote. Designed to inspire and 
-                     motivate, the application offers an enjoyable and visually 
-                     appealing experience for anyone looking to improve their 
-                     daily routine.
+                     
                   </p>
                </div>
                
                <div className={'project--button-container'}>
                   <div className={'project--button-case'}>
-                     <a className={'project--button'} href={quoteLink.project} target={'_blank'}>View Project</a>
+                     <a className={'project--button'} href={""} target={'_blank'}>View Project</a>
                   </div>
                   <div className={'project--button-case'}>
-                     <a className={'project--repo-button'} href={quoteLink.repo} target={'_blank'}>View Repository</a>
+                     <a className={'project--repo-button'} href={""} target={'_blank'}>View Repository</a>
                   </div>
                </div>
                   
             </div>
 
-            {/* Markdown Previewer */}
+            {/* Markdown Previewer
             
             <div className={'project--card'}>
                
@@ -129,9 +122,9 @@ function Projects(props, ref) {
                   </div>
                </div>
                   
-            </div>
+            </div> */}
 
-            {/* Drum Machine */}
+            {/* Drum Machine 
 
             <div className={'project--card'}>
                
@@ -181,7 +174,7 @@ function Projects(props, ref) {
                   </div>
                </div>
                   
-            </div>
+            </div>*/}
          
          </div>
       </section>
