@@ -15,7 +15,7 @@ export default function Hero() {
                Kevin Carter
             </h1>
             <h1 className={'hero--skill'}>
-               Front-End Developer
+               Full-Stack Engineer
             </h1>
             <h1 className={'hero--location'}>
                Atlanta, Ga
