@@ -10,15 +10,15 @@ function Projects(props, ref) {
    //    repo: 'https://github.com/kvncrtr/random-quote-machine'
    // }
 
-   // let markdownLink = {
-   //    project:'https://kvncrtr.github.io/markdown-previewer/',
-   //    repo: 'https://github.com/kvncrtr/markdown-previewer'
-   // }
+   let markdownLink = {
+      project:'https://kvncrtr.github.io/markdown-previewer/',
+      repo: 'https://github.com/kvncrtr/markdown-previewer'
+   }
 
-   // let drumLink = {
-   //    project:'https://kvncrtr.github.io/drum-machine/',
-   //    repo: 'https://github.com/kvncrtr/drum-machine'
-   // }
+   let drumLink = {
+      project:'https://kvncrtr.github.io/drum-machine/',
+      repo: 'https://github.com/kvncrtr/drum-machine'
+   }
 
    return (
       <section ref={ref} id={'projects'} className={'section'}>
@@ -55,7 +55,11 @@ function Projects(props, ref) {
                <div className={'project--description'}>
                   <p className={'bold'}>Description:</p>
                   <p className={'project--summary'}>
-                     
+                     Vendex is a small business level enterprise application
+                     that helps every team member stay up to date on inventory
+                     levels. The application will allow you to see reports on 
+                     sales, transactions, top products and more. Please use 
+                     the demo profile to utilize and view the application.
                   </p>
                </div>
                
@@ -70,7 +74,7 @@ function Projects(props, ref) {
                   
             </div>
 
-            {/* Markdown Previewer
+             {/* Markdown Previewer */}
             
             <div className={'project--card'}>
                
@@ -122,9 +126,9 @@ function Projects(props, ref) {
                   </div>
                </div>
                   
-            </div> */}
+            </div>
 
-            {/* Drum Machine 
+            {/* Drum Machine  */}
 
             <div className={'project--card'}>
                
@@ -174,7 +178,7 @@ function Projects(props, ref) {
                   </div>
                </div>
                   
-            </div>*/}
+            </div>
          
          </div>
       </section>
