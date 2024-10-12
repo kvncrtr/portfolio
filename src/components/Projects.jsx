@@ -5,11 +5,6 @@ import drum from '../assets/thumbnails/drum-thumb.jpg'
 import markdown from '../assets/thumbnails/markdown-thumb.jpg'
 
 function Projects(props, ref) {
-   // let quoteLink = {
-   //    project:'https://kvncrtr.github.io/random-quote-machine/',
-   //    repo: 'https://github.com/kvncrtr/random-quote-machine'
-   // }
-
    let markdownLink = {
       project:'https://kvncrtr.github.io/markdown-previewer/',
       repo: 'https://github.com/kvncrtr/markdown-previewer'
@@ -26,11 +21,11 @@ function Projects(props, ref) {
 
          <div className={'project--container'}>
             
-            {/* Random Quote Machine */}
+            {/* Vendex */}
 
             <div className={'project--card'}>
                
-               <a className={'project--image-case'} href={""} target={'_blank'}>
+               <a className={'project--image-case'} href={"https://vendex-production.up.railway.app/"} target={'_blank'}>
                   <img className={'project--image'} src={vendex} alt={`An 
                      image of a inventory manager called vendex`} 
                   />
@@ -65,10 +60,10 @@ function Projects(props, ref) {
                
                <div className={'project--button-container'}>
                   <div className={'project--button-case'}>
-                     <a className={'project--button'} href={""} target={'_blank'}>View Project</a>
+                     <a className={'project--button'} href={"https://vendex-production.up.railway.app/"} target={'_blank'}>View Project</a>
                   </div>
                   <div className={'project--button-case'}>
-                     <a className={'project--repo-button'} href={""} target={'_blank'}>View Repository</a>
+                     <a className={'project--repo-button'} href={"https://github.com/kvncrtr/vendex"} target={'_blank'}>View Repository</a>
                   </div>
                </div>
                   
