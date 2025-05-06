@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react'
 
-import vendex from '../assets/thumbnails/vendex-thumb.jpg'
-import drum from '../assets/thumbnails/drum-thumb.jpg'
-import markdown from '../assets/thumbnails/markdown-thumb.jpg'
+import vendex from '../assets/thumbnails/vendex-thumb.jpg';
+import lblc from '../assets/thumbnails/little-brook-learning-center-web-app-cover.png';
+import markdown from '../assets/thumbnails/markdown-thumb.jpg';
 
 function Projects(props, ref) {
    let markdownLink = {
@@ -20,6 +20,59 @@ function Projects(props, ref) {
          <h1 className={'section--title project--title'}>Projects</h1>
 
          <div className={'project--container'}>
+
+            {/* LBLC */}
+
+            <div className="project--card">
+               <a className={'project--image-case'} href={"https://vendex-production.up.railway.app/"} target={'_blank'}>
+                  <img className={'project--image'} src={lblc} alt={`An 
+                     image of a inventory manager called vendex`} 
+                  />
+               </a>
+
+               <div className={'project--specs'}>              
+                  <h3>Vendex</h3>
+                  <p className={'project--role'}>
+                     <span className={'bold'}>Role:</span> Full-Stack Engineer
+                  </p>
+                  <span className={'bold'}>Stack:</span>
+                  <ul className={'project--stack'}>
+                     <li>React</li>
+                     <li>SCSS</li>
+                     <li>PostgreSQL</li>
+                     <li>Go</li>
+                     <li>Git</li>
+                     <li>JavaScript</li>
+                     <li>Vercel</li>
+                     <li>Render</li>
+                  </ul>
+               </div>
+               
+               <div className={'project--description'}>
+                  <p className={'bold'}>Description:</p>
+                  <p className={'project--summary'}>
+                     Little Brook Learning Center is a start-up childcare 
+                     center. We designed this web app to be the main 
+                     entry point for our potential new parents. We used a 
+                     combination of Next.js rich SEO integration and our
+                     relational friendly database Postgres to scale our
+                     customer base. We are still rolling out features and
+                     our MVP will be done in July 2025. Since we are more
+                     inclined to an agile methodlogy we are more focused 
+                     on working iterations. You can find all of the code
+                     attached here.
+                  </p>
+               </div>
+               
+               <div className={'project--button-container'}>
+                  <div className={'project--button-case'}>
+                     <a className={'project--button'} href={"https://vendex-production.up.railway.app/"} target={'_blank'}>View Project</a>
+                  </div>
+                  <div className={'project--button-case'}>
+                     <a className={'project--repo-button'} href={"https://github.com/kvncrtr/vendex"} target={'_blank'}>View Repository</a>
+                  </div>
+               </div>
+            </div>
             
             {/* Vendex */}
 
@@ -47,6 +100,7 @@ function Projects(props, ref) {
                      <li>CSS</li>
                   </ul>
                </div>
+
                <div className={'project--description'}>
                   <p className={'bold'}>Description:</p>
                   <p className={'project--summary'}>
@@ -118,58 +172,6 @@ function Projects(props, ref) {
                   </div>
                   <div className={'project--button-case'}>
                      <a className={'project--repo-button'} href={markdownLink.repo} target={'_blank'}>View Repository</a>
-                  </div>
-               </div>
-                  
-            </div>
-
-            {/* Drum Machine  */}
-
-            <div className={'project--card'}>
-               
-               <a className={'project--image-case'} href={drumLink.project} target={'_blank'}>
-                  <img className={'project--image'} src={drum} alt={`a 
-                  image of a project that i've built called drum machine`} 
-                  />
-               </a>
-
-               <div className={'project--specs'}>              
-                  <h3>Drum Machine</h3>
-                  <p className={'project--role'}>
-                     <span className={'bold'}>Role:</span> Front-End Developer
-                  </p>
-                  <span className={'bold'}>Stack:</span>
-                  <ul className={'project--stack'}>
-                     <li>Bootstrap</li>
-                     <li>jQuery</li>
-                     <li>JavaScript</li>
-                     <li>HTML</li>
-                     <li>CSS</li>
-
-                  </ul>
-               </div>
-               <div className={'project--description'}>
-                  <p className={'bold'}>Description:</p>
-                  <p className={'project--summary'}>
-                     Drum machines are essential for creating music as 
-                     they provide a rhythmic backbone that simplifies the 
-                     creative process and enhances flexibility. This app 
-                     enables users to play a variety of drum sounds using 
-                     either the provided buttons or keyboard keys. The 
-                     app also features sliders that allow users to adjust 
-                     the volume of the sounds played. Moreover, the app 
-                     displays the name of the sound currently playing in 
-                     a text box. The interface of this app is modeled 
-                     after the Akai MPC 3000.
-                  </p>
-               </div>
-               
-               <div className={'project--button-container'}>
-                  <div className={'project--button-case'}>
-                     <a className={'project--button'} href={drumLink.project} target={'_blank'}>View Project</a>
-                  </div>
-                  <div className={'project--button-case'}>
-                     <a className={'project--repo-button'} href={drumLink.repo} target={'_blank'}>View Repository</a>
                   </div>
                </div>
                   
