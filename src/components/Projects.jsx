@@ -31,7 +31,7 @@ function Projects(props, ref) {
                </a>
 
                <div className={'project--specs'}>              
-                  <h3>Vendex</h3>
+                  <h3>LBLC (In Progress)</h3>
                   <p className={'project--role'}>
                      <span className={'bold'}>Role:</span> Full-Stack Engineer
                   </p>
@@ -66,10 +66,10 @@ function Projects(props, ref) {
                
                <div className={'project--button-container'}>
                   <div className={'project--button-case'}>
-                     <a className={'project--button'} href={"https://vendex-production.up.railway.app/"} target={'_blank'}>View Project</a>
+                     <a className={'project--button'} href={"https://littlebrooklc.com"} target={'_blank'}>View Project</a>
                   </div>
                   <div className={'project--button-case'}>
-                     <a className={'project--repo-button'} href={"https://github.com/kvncrtr/vendex"} target={'_blank'}>View Repository</a>
+                     <a className={'project--repo-button'} href={"https://github.com/kvncrtr/lblc-frontend"} target={'_blank'}>View Repository</a>
                   </div>
                </div>
             </div>
