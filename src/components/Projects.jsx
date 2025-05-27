@@ -57,7 +57,7 @@ function Projects(props, ref) {
                      combination of Next.js rich SEO integration and our
                      relational friendly database Postgres to scale our
                      customer base. We are still rolling out features and
-                     our MVP will be done in July 2025. Since we are more
+                     our MVP will be done in November 2025. Since we are more
                      inclined to an agile methodlogy we are more focused 
                      on working iterations. You can find all of the code
                      attached here.
